@@ -343,6 +343,8 @@ class App_Controller_Install extends Fz_Controller {
             return in_array ('mod_rewrite', apache_get_modules ());
         else if (getenv ('HTTP_MOD_REWRITE') == 'On')
             return true;
+        else if (preg_match('/^nginx/',$_SERVER['SERVER_SOFTWARE']) === 1)
+            return true;
         else
             return null;
     }

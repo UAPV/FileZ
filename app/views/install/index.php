@@ -76,6 +76,7 @@ function config_form_row ($section, $var, $label, $type, $default_values, $choic
         '' => 'None',
         'Fz_UploadMonitor_ProgressUpload' => 'PECL::ProgressUpload',
         'Fz_UploadMonitor_Apc'            => 'APC',
+        'Fz_UploadMonitor_Nginx'            => 'Nginx UploadProgressModule',
     )) ?>
     </td></tr></table>
   </fieldset>

@@ -128,8 +128,9 @@ function fz_redirect_to ($url, $secured = false) {
  * @return void
  */
 function fz_force_https () {
-    if (fz_is_request_secured ())
+    if (fz_is_request_secured ()) {
         return;
+    }
 
     redirect_to ('https://'.$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]);
 }

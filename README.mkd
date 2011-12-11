@@ -43,6 +43,12 @@ Requirement
           echo "extension = uploadprogress.so" >> /etc/php5/apache2/conf.d/uploadprogress.ini
           apache2ctl restart
 
+    * __Nginx UploadProgressModule__ (may be on a reverse-proxy)
+
+          Not packaged on debian
+          http://wiki.nginx.org/HttpUploadProgressModule
+          On FreeBSD, select the module when installing.
+
 * You will need __php5-curl__ to be able to authenticate against a CAS server
 
 * You will need __php5-ldap__ to be able to identicate with a LDAP server

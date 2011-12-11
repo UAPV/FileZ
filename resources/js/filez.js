@@ -48,7 +48,7 @@ $.fn.initFilez = function (options) {
     uploadForm = $(this);
 
     settings = jQuery.extend(true, {
-        refreshRate: 2000,
+        refreshRate: 500,
         useProgressBar: false
     }, options);
 
@@ -60,13 +60,15 @@ $.fn.initFilez = function (options) {
         iframe:       true              // force the form to be submitted using an iframe
     });
 
-    if (settings.progressBar.enable) {
-        $(this).prepend ('<input type="hidden" name="'+settings.progressBar.upload_id_name+'" id="upload-id"  value="'+uniqid ()+'" />');
-    }
-    
     // let the server knows it has to return JSON
     $(this).attr ('action', $(this).attr ('action') + '?is-async=1');
 
+    if (settings.progressBar.enable) {
+	var progressid=uniqid("");
+        $(this).prepend ('<input type="hidden" name="'+settings.progressBar.upload_id_name+'" id="upload-id"  value="'+progressid+'" />');
+        $(this).attr ('action', $(this).attr ('action') + '&X-Progress-ID='+progressid);
+    }
+    
     // Initialise actions event handlers
     $('.file .actions').initFileActions();
 
