@@ -308,6 +308,47 @@ Apache virtual host example
         LogLevel warn
 </VirtualHost>
 
+
+Nginx virtual host example
+--------------------------
+
+upload_progress fzuploads 1m;
+server {
+  listen *:80;
+  server_name filez-test.univ-avignon.fr;
+  root /usr/local/www/filez;
+  location / {
+    index index.php;
+    rewrite ^/filez(/.+)$ /filez/index.php$1 last;
+  }
+  # infos de progression des uploads (http://wiki.nginx.org/HttpUploadProgressModule)
+  location /upload/progress {
+    rewrite ^/upload/progress/(\w+)$ /upload/progress/?X-Progress-ID=$1;
+    report_uploads fzuploads;
+    upload_progress_content_type 'application/json';
+    upload_progress_template starting '{"total":$uploadprogress_length,"current":0,"done":0}';
+    upload_progress_template uploading '{"total":$uploadprogress_length,"current":$uploadprogress_received,"done":0}';
+    upload_progress_template done '{"total":$uploadprogress_length,"current":$uploadprogress_received,"done":1}';
+    upload_progress_template error '{"error":$uploadprogress_status}';
+  }
+  location ~ ^/index.php$ {
+    sendfile on;
+    fastcgi_read_timeout 120;
+    fastcgi_index  index.php;
+    fastcgi_param  HTTPS        "on";
+    fastcgi_pass   127.0.0.1:9099;
+    fastcgi_split_path_info ^(.+\.php)(/.*)$;
+    fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;
+    fastcgi_param  PATH_INFO          $fastcgi_path_info;
+    fastcgi_param  PATH_TRANSLATED    $document_root$fastcgi_path_info;
+    client_max_body_size 3500m;
+    upload_max_file_size 3000m;
+    include fastcgi_params;
+    track_uploads fzuploads 60s;
+  }
+}
+
+
 Authenticating against an ORACLE OIDDAS LDAP server
 ---------------------------------------------------
 
@@ -326,22 +367,22 @@ Authenticating against an ORACLE OIDDAS LDAP server
     id = "cn"
 
     
-Required Ports to install FileZ on FreeBSD (8.1)
+Required Ports to install FileZ on FreeBSD (8.2)
 ------------------------------------------------
 
-* /usr/ports/www/php5-session
-* /usr/ports/textproc/php5-simplexml
-* /usr/ports/databases/php5-pdo
-* /usr/ports/databases/php5-pdo_mysql
-* /usr/ports/net/php5-ldap (pour l'auth ldap)
-* /usr/ports/devel/php5-json
-* /usr/ports/converters/php5-iconv
-* /usr/ports/security/php5-filter
-* /usr/ports/lang/php5
-* /usr/ports/devel/pecl-uploadprogress (if you choose this method for handling upload progress)
-* /usr/ports/net/openldap23-client/ (pour l'auth ldap)
-* /usr/ports/databases/mysql51-server
-* /usr/ports/databases/mysql51-client
-* /usr/ports/www/apache22
+* lang/php5
+* www/php5-session
+* textproc/php5-simplexml
+* databases/php5-pdo
+* databases/php5-pdo_mysql
+* devel/php5-json
+* converters/php5-iconv
+* security/php5-filter
+* devel/pecl-uploadprogress (if you choose this method for handling upload progress)
+* net/openldap24-client/ (pour l'auth ldap)
+* net/php5-ldap (pour l'auth ldap)
+* databases/mysql51-server | databases/mariadb-server
+* databases/mysql51-client | databases/mariadb-client
+* www/apache22 | www/nginx
 
 
