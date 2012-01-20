@@ -47,17 +47,19 @@ class Fz_Controller {
         $factory = $this->getUserFactory ();
         if (self::$_user === null && $auth->isSecured ()) {
             self::$_user = Fz_Db::getTable('User')->findByUsername ($auth->getUserId ());
-            if (! $factory->isInternal ()) {
+            if ( $factory->isInternal ()) {
                 if (self::$_user === null)
                     self::$_user = new App_Model_User ();
 
                 // Update fields
                 $userData = $factory->findById ($auth->getUserId ());
-                self::$_user->username     = $userData['id'];
+                self::$_user->id           = $userData['id'];
+                self::$_user->username     = $userData['username'];
                 self::$_user->email        = $userData['email'];
                 self::$_user->firstname    = $userData['firstname'];
                 self::$_user->lastname     = $userData['lastname'];
-                self::$_user->save (); // will issue an update or insert only if a property changed
+                self::$_user->is_admin     = $userData['is_admin'];
+                //self::$_user->save (); // will issue an update or insert only if a property changed
             }
         }
         return self::$_user;
