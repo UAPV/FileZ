@@ -10,6 +10,8 @@
  */
 
 define ('UPLOAD_ERR_QUOTA_EXCEEDED', 99);
+define('UPLOAD_ERR_VIRUS_FOUND', 100);
+define('UPLOAD_ERR_ANTIVIRUS', 101);
 
 /**
  * Controller used to upload files and monitor progression
@@ -35,6 +37,18 @@ class App_Controller_Upload extends Fz_Controller {
         else if ($_FILES ['file']['error'] === UPLOAD_ERR_OK) {
             if ($this->checkQuota ($_FILES ['file'])) // Check user quota first
                 return $this->onFileUploadError (UPLOAD_ERR_QUOTA_EXCEEDED);
+
+            // We check if the file contains a virus before and must be stopped
+            $fileFirstStep = $_FILES ['file']['tmp_name'];
+            try {
+    	      if ($this->checkVirus ($fileFirstStep))
+              {
+    	        return $this->onFileUploadError (UPLOAD_ERR_VIRUS_FOUND);
+              }
+    	    } catch (Exception $e) {
+    	      fz_log ($e, FZ_LOG_ERROR);
+    	      return $this->onFileUploadError (UPLOAD_ERR_ANTIVIRUS);
+    	    }
 
             // Still no error ? we can move the file to its final destination
             $file = $this->saveFile ($_POST, $_FILES ['file']);
@@ -197,6 +211,27 @@ class App_Controller_Upload extends Fz_Controller {
     }
 
     /**
+     * Check if the file is infected thanks a software called clamav.
+     *
+     * @throws Exception Error during scan of the file
+     * @param  $file  File we want to check
+     * @return int    0 if everything is ok
+     */
+    private function checkVirus($file) {
+       $cmd = fz_config_get('app','antivirus');
+       exec($cmd." ".$file, $output, $return_value);
+
+        if ($return_value === 1) {
+        	fz_log ('VIRUS FOUND file id '.$file.', antivirus message: "'.implode ($output).'"', FZ_LOG_ERROR);
+        	return 1;
+       }
+
+        if ($return_value === 2) {
+    	    throw new Exception('Antivirus reported an error.');
+       }
+       return 0;
+    }
+    /**
      * Return data to the browser with the correct response type (json or html).
      * If the request comes from an iframe (with the is-async GET parameter,
      * the response is embedded inside a textarea to prevent some browsers :
@@ -272,6 +307,16 @@ class App_Controller_Upload extends Fz_Controller {
             case UPLOAD_ERR_QUOTA_EXCEEDED:
                 $response ['statusText'] .= __r('You exceeded your disk space quota (%space%).',
                     array ('space' => $this->getUser()->getQuota().'G'));
+
+            // a virus has been found
+            case UPLOAD_ERR_VIRUS_FOUND:
+                $response ['statusText'] .=
+                     __('A virus was found in the file.');
+                break;
+            case UPLOAD_ERR_ANTIVIRUS:
+                $response ['statusText'] .=
+                     __('An error occurred during a scan. Please contact the system administrator.');
+                break;
         }
         return $this->returnData ($response);
     }
