@@ -135,4 +135,12 @@ class App_Model_User extends Fz_Db_Table_Row_Abstract {
         return bytesToShorthand( Fz_Db::getTable('File')->getTotalDiskSpaceByUser ($this));
     }
 
+    public function getDiskFree() {
+        $quota = $this->getQuota();
+        $spaceUsed = $this->getDiskUsage();
+        $freeSpace = Fz_Db::getTable('File')->shorthandSizeToBytes($quota) - Fz_Db::getTable('File')->shorthandSizeToBytes($spaceUsed);
+
+        return $freeSpace;
+    }
+
 }

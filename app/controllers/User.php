@@ -132,4 +132,43 @@ class App_Controller_User extends Fz_Controller {
 
         return redirect_to ('/admin/users');
     }
+
+    public function editQuotaAction() {
+
+        $this->secure ('admin');
+        $user = Fz_Db::getTable ('User')->findById ($_POST['idUser']);
+        $error = false;
+        $success = false;
+
+      if($this->shorthandSizeToBytes($_POST['quota'].'G') > $this->shorthandSizeToBytes($user->getDiskUsage()))
+      {
+         if(count($user) > 0)
+       {
+          $user->setQuota($_POST['quota'].'G');
+          $user->save();
+          $success = true;
+       }
+      }
+      else
+        $error = true;
+
+     if ($this->isXhrRequest())
+       return json (array ('success' => $success, 'error' => $error));
+  }
+
+    /**
+     * Transform a size in the shorthand format ('K', 'M', 'G') to bytes
+     *
+     * @param string $size
+     * @return integer
+     */
+    public function shorthandSizeToBytes ($size) {
+        $size = str_replace (' ', '', $size);
+        switch(strtolower($size[strlen($size)-1])) {
+            case 'g': $size *= 1024;
+            case 'm': $size *= 1024;
+            case 'k': $size *= 1024;
+        }
+        return floatval ($size);
+    }
 }

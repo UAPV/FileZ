@@ -14,69 +14,69 @@ msgstr ""
 "X-Poedit-Country: FRANCE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __r;__;__p\n"
-"X-Poedit-Basepath: /home/didrya/filez/\n"
+"X-Poedit-Basepath: /home/marcelf/filez/\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-SearchPath-0: /home/didrya/filez\n"
+"X-Poedit-SearchPath-0: /home/marcelf/filez\n"
 
-#: /home/didrya/filez/app/models/User.php:111
+#: /home/marcelf/filez/app/models/User.php:111
 msgid "\"%s%\" is not a valid email."
 msgstr "\"%s%\" n'est pas un email valide."
 
-#: /home/didrya/filez/app/models/User.php:114
+#: /home/marcelf/filez/app/models/User.php:114
 msgid "The username should not be blank"
 msgstr "Le nom d'utilisateur ne doit pas être vide"
 
-#: /home/didrya/filez/app/models/User.php:117
+#: /home/marcelf/filez/app/models/User.php:117
 msgid "The password is too short."
 msgstr "Le mot de passe est trop court."
 
-#: /home/didrya/filez/app/models/User.php:121
+#: /home/marcelf/filez/app/models/User.php:121
 msgid "This username is already used."
 msgstr "Ce nom d'utilisateur est déjà utilisé"
 
-#: /home/didrya/filez/app/models/User.php:124
+#: /home/marcelf/filez/app/models/User.php:124
 msgid "This email is already used."
 msgstr "Cette adresse email est déjà utilisé."
 
-#: /home/didrya/filez/app/models/User.php:129
+#: /home/marcelf/filez/app/models/User.php:129
 msgid "This username belongs to another user."
 msgstr "Ce nom d'utilisateur est déjà utilisé."
 
-#: /home/didrya/filez/app/models/User.php:133
+#: /home/marcelf/filez/app/models/User.php:133
 msgid "This email belongs to another user."
 msgstr "Cette adresse email est déjà utilisée."
 
-#: /home/didrya/filez/app/models/File.php:149
-#: /home/didrya/filez/app/models/DbTable/File.php:249
+#: /home/marcelf/filez/app/models/File.php:149
+#: /home/marcelf/filez/app/models/DbTable/File.php:249
 msgid "B"
 msgstr "o"
 
-#: /home/didrya/filez/app/models/File.php:149
-#: /home/didrya/filez/app/models/DbTable/File.php:249
+#: /home/marcelf/filez/app/models/File.php:149
+#: /home/marcelf/filez/app/models/DbTable/File.php:249
 msgid "KB"
 msgstr "Ko"
 
-#: /home/didrya/filez/app/models/File.php:149
-#: /home/didrya/filez/app/models/DbTable/File.php:249
+#: /home/marcelf/filez/app/models/File.php:149
+#: /home/marcelf/filez/app/models/DbTable/File.php:249
 msgid "MB"
 msgstr "Mo"
 
-#: /home/didrya/filez/app/models/File.php:149
-#: /home/didrya/filez/app/models/DbTable/File.php:249
+#: /home/marcelf/filez/app/models/File.php:149
+#: /home/marcelf/filez/app/models/DbTable/File.php:249
 msgid "GB"
 msgstr "Go"
 
-#: /home/didrya/filez/app/models/File.php:149
-#: /home/didrya/filez/app/models/DbTable/File.php:249
+#: /home/marcelf/filez/app/models/File.php:149
+#: /home/marcelf/filez/app/models/DbTable/File.php:249
 msgid "TB"
 msgstr "To"
 
-#: /home/didrya/filez/app/controllers/Admin.php:95
+#: /home/marcelf/filez/app/controllers/Admin.php:95
 #, fuzzy
 msgid "[FileZ] Your file \"%file_name%\" is going to be deleted"
 msgstr "[FileZ] Votre fichier \"%file_name%\" va prochainement être supprimé"
 
-#: /home/didrya/filez/app/controllers/Admin.php:97
+#: /home/marcelf/filez/app/controllers/Admin.php:97
 msgid "email_delete_notif (%file_name%, %file_url%, %filez_url%, %available_until%)"
 msgstr ""
 "Bonjour,\n"
@@ -89,11 +89,11 @@ msgstr ""
 "\n"
 "-----NE REPONDEZ PAS A CE MESSAGE ! Il a été généré automatiquement, votre réponse n'aboutirait pas !"
 
-#: /home/didrya/filez/app/controllers/Upload.php:157
+#: /home/marcelf/filez/app/controllers/Upload.php:157
 msgid "[FileZ] \"%file_name%\" uploaded successfuly"
 msgstr "[Filez] Votre fichier \"%file_name%\" a correctement été envoyé"
 
-#: /home/didrya/filez/app/controllers/Upload.php:159
+#: /home/marcelf/filez/app/controllers/Upload.php:159
 msgid "email_upload_success (%file_name%, %file_url%, %filez_url%, %available_from%, %available_until%)"
 msgstr ""
 "Bonjour,\n"
@@ -108,60 +108,60 @@ msgstr ""
 "\n"
 "-----NE REPONDEZ PAS A CE MESSAGE !Il a été généré automatiquement, votre réponse n'aboutirait pas !"
 
-#: /home/didrya/filez/app/controllers/Upload.php:237
+#: /home/marcelf/filez/app/controllers/Upload.php:237
 msgid "The file was successfuly uploaded"
 msgstr "Le fichier a été correctement envoyé"
 
-#: /home/didrya/filez/app/controllers/Upload.php:254
+#: /home/marcelf/filez/app/controllers/Upload.php:254
 msgid "An error occured while uploading the file."
 msgstr "Une erreur s'est produite pendant l'envoi du fichier."
 
-#: /home/didrya/filez/app/controllers/Upload.php:271
+#: /home/marcelf/filez/app/controllers/Upload.php:271
 msgid "The uploaded file exceeds the max file size."
 msgstr "La taille du fichier dépasse la taille maximale.."
 
-#: /home/didrya/filez/app/controllers/Upload.php:276
+#: /home/marcelf/filez/app/controllers/Upload.php:276
 msgid "The uploaded file was only partially uploaded."
 msgstr "Le fichier n'a été que partiellement envoyé."
 
-#: /home/didrya/filez/app/controllers/Upload.php:280
+#: /home/marcelf/filez/app/controllers/Upload.php:280
 msgid "No file was uploaded."
 msgstr "Aucun fichier n'a été envoyé"
 
-#: /home/didrya/filez/app/controllers/Upload.php:283
+#: /home/marcelf/filez/app/controllers/Upload.php:283
 msgid "You exceeded your disk space quota (%space%)."
 msgstr "Vous avez dépassé votre quota disque (%space%)."
 
-#: /home/didrya/filez/app/controllers/Help.php:54
+#: /home/marcelf/filez/app/controllers/Help.php:54
 msgid "This documentation does not exist"
 msgstr "Cette documentation n'existe pas"
 
-#: /home/didrya/filez/app/controllers/Auth.php:55
+#: /home/marcelf/filez/app/controllers/Auth.php:55
 msgid "Wrong username or password"
 msgstr "Nom d'utilisateur ou mot de passe incorrect"
 
-#: /home/didrya/filez/app/controllers/File.php:79
+#: /home/marcelf/filez/app/controllers/File.php:79
 msgid "Lifetime extended"
 msgstr "Durée de vie prolongée"
 
-#: /home/didrya/filez/app/controllers/File.php:83
+#: /home/marcelf/filez/app/controllers/File.php:83
 msgid "You can't extend a file lifetime more than %x% times"
 msgstr "Vous ne pouvez pas augmenter la durée de vie d'un fichier plus de %x% fois"
 
-#: /home/didrya/filez/app/controllers/File.php:106
-#: /home/didrya/filez/app/controllers/File.php:239
+#: /home/marcelf/filez/app/controllers/File.php:106
+#: /home/marcelf/filez/app/controllers/File.php:239
 msgid "There is no file for this code"
 msgstr "Aucun fichier n'existe pour ce code"
 
-#: /home/didrya/filez/app/controllers/File.php:140
+#: /home/marcelf/filez/app/controllers/File.php:140
 msgid "File deleted."
 msgstr "Fichier supprimé"
 
-#: /home/didrya/filez/app/controllers/File.php:170
+#: /home/marcelf/filez/app/controllers/File.php:170
 msgid "[FileZ] \"%sender%\" wants to share a file with you"
 msgstr "[FileZ] %sender% souhaite partager un fichier avec vous"
 
-#: /home/didrya/filez/app/controllers/File.php:172
+#: /home/marcelf/filez/app/controllers/File.php:172
 msgid "email_share_file (%file_name%, %file_url%, %sender%, %msg%)"
 msgstr ""
 "Bonjour,\n"
@@ -171,409 +171,422 @@ msgstr ""
 "Voici le contenu de son message :\n"
 "%msg%"
 
-#: /home/didrya/filez/app/controllers/File.php:192
+#: /home/marcelf/filez/app/controllers/File.php:192
 msgid "Email address \"%email%\" is incorrect, please correct it."
 msgstr "L'adresse email \"%email%\" est incorrecte, veuillez la corriger."
 
-#: /home/didrya/filez/app/controllers/File.php:204
+#: /home/marcelf/filez/app/controllers/File.php:204
 msgid "An error occured during email submission. Please try again."
 msgstr "Une erreur est survenue pendant l'envoi du fichier. Veuillez réessayer."
 
-#: /home/didrya/filez/app/controllers/File.php:252
+#: /home/marcelf/filez/app/controllers/File.php:252
 msgid "File is not available for download"
 msgstr "Le fichier n'est pas disponible au téléchargement"
 
-#: /home/didrya/filez/app/controllers/File.php:255
+#: /home/marcelf/filez/app/controllers/File.php:255
 msgid "Incorrect password"
 msgstr "Mot de passe incorrect"
 
-#: /home/didrya/filez/app/controllers/File.php:291
+#: /home/marcelf/filez/app/controllers/File.php:291
 msgid "You are not the owner of the file"
 msgstr "Vous n'êtes pas le propriétaire du fichier"
 
-#: /home/didrya/filez/app/views/file/index.php:1
+#: /home/marcelf/filez/app/views/file/index.php:1
 msgid "Manage files"
 msgstr "Gérer les fichiers"
 
-#: /home/didrya/filez/app/views/file/index.php:7
-#: /home/didrya/filez/app/views/user/index.php:9
-#: /home/didrya/filez/app/views/user/show.php:13
+#: /home/marcelf/filez/app/views/file/index.php:7
+#: /home/marcelf/filez/app/views/user/index.php:9
+#: /home/marcelf/filez/app/views/user/show.php:13
 msgid "Name"
 msgstr "Nom"
 
-#: /home/didrya/filez/app/views/file/index.php:8
+#: /home/marcelf/filez/app/views/user/index.php:14
+msgid "Max size of data"
+msgstr "Max quota"
+
+#: /home/marcelf/filez/app/views/file/index.php:8
 msgid "Author"
 msgstr "Auteur"
 
-#: /home/didrya/filez/app/views/file/index.php:9
-#: /home/didrya/filez/app/views/user/show.php:14
+#: /home/marcelf/filez/app/views/file/index.php:9
+#: /home/marcelf/filez/app/views/user/show.php:14
+msgid "Availability"
+msgstr "Disponibilité"
+
+#: /home/marcelf/filez/app/views/file/index.php:9
+#: /home/marcelf/filez/app/views/user/show.php:14
 msgid "Availability"
 msgstr "disponibilité"
 
-#: /home/didrya/filez/app/views/file/index.php:10
-#: /home/didrya/filez/app/views/user/show.php:15
+#: /home/marcelf/filez/app/views/file/index.php:10
+#: /home/marcelf/filez/app/views/user/show.php:15
 msgid "Size"
 msgstr "Taille"
 
-#: /home/didrya/filez/app/views/file/index.php:11
-#: /home/didrya/filez/app/views/user/show.php:16
+#: /home/marcelf/filez/app/views/file/index.php:11
+#: /home/marcelf/filez/app/views/user/show.php:16
 msgid "DL count"
 msgstr "Nombre de Téléchargements"
 
-#: /home/didrya/filez/app/views/file/index.php:12
-#: /home/didrya/filez/app/views/user/index.php:15
-#: /home/didrya/filez/app/views/user/show.php:17
+#: /home/marcelf/filez/app/views/file/index.php:12
+#: /home/marcelf/filez/app/views/user/index.php:15
+#: /home/marcelf/filez/app/views/user/show.php:17
 msgid "Actions"
 msgstr "Actions"
 
-#: /home/didrya/filez/app/views/file/index.php:23
-#: /home/didrya/filez/app/views/user/show.php:23
+#: /home/marcelf/filez/app/views/file/index.php:23
+#: /home/marcelf/filez/app/views/user/show.php:23
 msgid "from %from% to %to%"
 msgstr "du %from% au %to%"
 
-#: /home/didrya/filez/app/views/file/index.php:31
-#: /home/didrya/filez/app/views/main/_file_row.php:41
-#: /home/didrya/filez/app/views/main/_file_row.php:42
-#: /home/didrya/filez/app/views/user/index.php:40
-#: /home/didrya/filez/app/views/user/show.php:31
+#: /home/marcelf/filez/app/views/file/index.php:31
+#: /home/marcelf/filez/app/views/main/_file_row.php:41
+#: /home/marcelf/filez/app/views/main/_file_row.php:42
+#: /home/marcelf/filez/app/views/user/index.php:40
+#: /home/marcelf/filez/app/views/user/show.php:31
 msgid "Delete"
 msgstr "Supprimer"
 
-#: /home/didrya/filez/app/views/file/preview.php:18
+#: /home/marcelf/filez/app/views/file/preview.php:18
 msgid "Available from %available_from% to %available_until%"
 msgstr "Disponible du  %available_from% au %available_until%"
 
-#: /home/didrya/filez/app/views/file/preview.php:25
+#: /home/marcelf/filez/app/views/file/preview.php:25
 msgid "Uploaded by"
 msgstr "Envoyé par"
 
-#: /home/didrya/filez/app/views/file/preview.php:29
-#: /home/didrya/filez/app/views/main/index.php:29
+#: /home/marcelf/filez/app/views/file/preview.php:29
+#: /home/marcelf/filez/app/views/main/index.php:29
 msgid "Comments"
 msgstr "Commentaire"
 
-#: /home/didrya/filez/app/views/file/preview.php:38
-#: /home/didrya/filez/app/views/file/preview.php:63
+#: /home/marcelf/filez/app/views/file/preview.php:38
+#: /home/marcelf/filez/app/views/file/preview.php:63
 msgid "Download"
 msgstr "Télécharger"
 
-#: /home/didrya/filez/app/views/file/preview.php:43
+#: /home/marcelf/filez/app/views/file/preview.php:43
 msgid "Your download will start shortly..."
 msgstr "Votre téléchargement devrait démarrer automatiquement..."
 
-#: /home/didrya/filez/app/views/file/preview.php:45
+#: /home/marcelf/filez/app/views/file/preview.php:45
 msgid "If not, click here"
 msgstr "Si ce n'est pas le cas, cliquez ici"
 
-#: /home/didrya/filez/app/views/file/preview.php:60
+#: /home/marcelf/filez/app/views/file/preview.php:60
 msgid "You need a password to download this file"
 msgstr "Vous devez entrer un mot de passe pour pouvoir télécharger ce fichier"
 
-#: /home/didrya/filez/app/views/file/preview.php:67
+#: /home/marcelf/filez/app/views/file/preview.php:67
 #, fuzzy
 msgid "The file is not available yet"
 msgstr "Le fichier n'est pas encore disponible au téléchargement"
 
-#: /home/didrya/filez/app/views/file/_mailForm.php:4
+#: /home/marcelf/filez/app/views/file/_mailForm.php:4
 msgid "Email addresses (space separated)"
 msgstr "Adresses email (séparées par des espaces)"
 
-#: /home/didrya/filez/app/views/file/_mailForm.php:8
+#: /home/marcelf/filez/app/views/file/_mailForm.php:8
 msgid "Message (file url will automatically be added)"
 msgstr "Message (l'adresse de téléchargement du fichier sera automatiquement ajoutée)"
 
-#: /home/didrya/filez/app/views/file/_mailForm.php:12
-#: /home/didrya/filez/app/views/main/index.php:109
+#: /home/marcelf/filez/app/views/file/_mailForm.php:12
+#: /home/marcelf/filez/app/views/main/index.php:109
 msgid "You can download the file I uploaded here"
 msgstr "Vous pouvez télécharger le fichier que j'ai envoyé ici"
 
-#: /home/didrya/filez/app/views/file/_mailForm.php:14
+#: /home/marcelf/filez/app/views/file/_mailForm.php:14
 msgid "Open in my email client"
 msgstr "Ouvrir dans ma messagerie"
 
-#: /home/didrya/filez/app/views/file/_mailForm.php:18
+#: /home/marcelf/filez/app/views/file/_mailForm.php:18
 msgid "Send"
 msgstr "Envoyer"
 
-#: /home/didrya/filez/app/views/main/index.php:2
-#: /home/didrya/filez/app/views/main/index.php:123
+#: /home/marcelf/filez/app/views/main/index.php:2
+#: /home/marcelf/filez/app/views/main/index.php:123
 msgid "Upload a new file"
 msgstr "Envoyer un nouveau fichier"
 
-#: /home/didrya/filez/app/views/main/index.php:7
+#: /home/marcelf/filez/app/views/main/index.php:7
 msgid "File (Max size: %size%)"
 msgstr "Fichier (Taille maximale: %size%)"
 
-#: /home/didrya/filez/app/views/main/index.php:9
+#: /home/marcelf/filez/app/views/main/index.php:9
 msgid "File"
 msgstr "Fichier"
 
-#: /home/didrya/filez/app/views/main/index.php:13
+#: /home/marcelf/filez/app/views/main/index.php:13
 msgid "Lifetime"
 msgstr "Durée"
 
-#: /home/didrya/filez/app/views/main/index.php:14
+#: /home/marcelf/filez/app/views/main/index.php:14
 msgid "Select a lifetime"
 msgstr "Sélectionnez une durée de vie du fichier"
 
-#: /home/didrya/filez/app/views/main/index.php:19
+#: /home/marcelf/filez/app/views/main/index.php:19
 msgid "%n% days"
 msgstr "%n% jours"
 
-#: /home/didrya/filez/app/views/main/index.php:19
+#: /home/marcelf/filez/app/views/main/index.php:19
 msgid "%n% day"
 msgstr "%n% jour"
 
-#: /home/didrya/filez/app/views/main/index.php:25
+#: /home/marcelf/filez/app/views/main/index.php:25
 msgid "Starts from"
 msgstr "Début"
 
-#: /home/didrya/filez/app/views/main/index.php:26
+#: /home/marcelf/filez/app/views/main/index.php:26
 msgid "Select a starting date"
 msgstr "Sélectionnez une date de début"
 
-#: /home/didrya/filez/app/views/main/index.php:30
+#: /home/marcelf/filez/app/views/main/index.php:30
 msgid "Add a comment (optional)"
 msgstr "Ajouter un commentaire (facultatif)"
 
-#: /home/didrya/filez/app/views/main/index.php:35
+#: /home/marcelf/filez/app/views/main/index.php:35
 msgid "Send me email notifications when the file is uploaded and before it will be deleted"
 msgstr "M'envoyer des emails de notification lorsque le fichier va être supprimé"
 
-#: /home/didrya/filez/app/views/main/index.php:36
+#: /home/marcelf/filez/app/views/main/index.php:36
 msgid "Send me email notifications"
 msgstr "M'envoyer des emails de notification"
 
-#: /home/didrya/filez/app/views/main/index.php:41
+#: /home/marcelf/filez/app/views/main/index.php:41
 msgid "Ask a password to people who will download your file"
 msgstr "Utiliser un mot de passe pour protéger le télécharger du fichier"
 
-#: /home/didrya/filez/app/views/main/index.php:42
+#: /home/marcelf/filez/app/views/main/index.php:42
 msgid "Use a password to download"
 msgstr "Utiliser un mot de passe"
 
-#: /home/didrya/filez/app/views/main/index.php:48
+#: /home/marcelf/filez/app/views/main/index.php:48
 msgid "Upload"
 msgstr "Envoyer"
 
-#: /home/didrya/filez/app/views/main/index.php:55
+#: /home/marcelf/filez/app/views/main/index.php:55
 msgid "Uploaded files"
 msgstr "Fichiers envoyés"
 
-#: /home/didrya/filez/app/views/main/index.php:67
+#: /home/marcelf/filez/app/views/main/index.php:67
 msgid "Give this link to the person you want to share this file with"
 msgstr "Donner cette adresse internet aux personnes avec qui vous souhaitez partager le fichier"
 
-#: /home/didrya/filez/app/views/main/index.php:69
+#: /home/marcelf/filez/app/views/main/index.php:69
 msgid "or share using"
 msgstr "ou partagez en utilisant"
 
-#: /home/didrya/filez/app/views/main/index.php:72
+#: /home/marcelf/filez/app/views/main/index.php:72
 msgid "your email"
 msgstr "votre email"
 
-#: /home/didrya/filez/app/views/main/index.php:75
+#: /home/marcelf/filez/app/views/main/index.php:75
 msgid "Facebook"
 msgstr "Facebook"
 
-#: /home/didrya/filez/app/views/main/index.php:78
+#: /home/marcelf/filez/app/views/main/index.php:78
 msgid "Twitter"
 msgstr "Twitter"
 
-#: /home/didrya/filez/app/views/main/index.php:105
+#: /home/marcelf/filez/app/views/main/index.php:105
 msgid "Are you sure to delete this file ?"
 msgstr "Êtes vous sûr de vouloir supprimer ce fichier ?"
 
-#: /home/didrya/filez/app/views/main/index.php:106
+#: /home/marcelf/filez/app/views/main/index.php:106
 msgid "Unknown error"
 msgstr "Erreur inconnue"
 
-#: /home/didrya/filez/app/views/main/index.php:107
+#: /home/marcelf/filez/app/views/main/index.php:107
 msgid "An unknown error hapenned while uploading the file"
 msgstr "Une erreur inconnue est survenue pendant l'envoi du fichier."
 
-#: /home/didrya/filez/app/views/main/index.php:108
+#: /home/marcelf/filez/app/views/main/index.php:108
 msgid "Cancel"
 msgstr "Annuler"
 
-#: /home/didrya/filez/app/views/main/_file_row.php:15
+#: /home/marcelf/filez/app/views/main/_file_row.php:15
 msgid "Share"
 msgstr "Partager"
 
-#: /home/didrya/filez/app/views/main/_file_row.php:21
+#: /home/marcelf/filez/app/views/main/_file_row.php:21
 msgid "Available from %from% to %to%"
 msgstr "Disponible du %from% au %to%"
 
-#: /home/didrya/filez/app/views/main/_file_row.php:28
-#: /home/didrya/filez/app/views/main/_file_row.php:29
+#: /home/marcelf/filez/app/views/main/_file_row.php:28
+#: /home/marcelf/filez/app/views/main/_file_row.php:29
 msgid "Extend one more day"
 msgstr "Rendre disponible un jour de plus"
 
-#: /home/didrya/filez/app/views/main/_file_row.php:34
+#: /home/marcelf/filez/app/views/main/_file_row.php:34
 msgid "Never downloaded"
 msgstr "Jamais téléchargé"
 
-#: /home/didrya/filez/app/views/main/_file_row.php:35
+#: /home/marcelf/filez/app/views/main/_file_row.php:35
 msgid "Downloaded once"
 msgstr "Téléchargé une fois"
 
-#: /home/didrya/filez/app/views/main/_file_row.php:36
+#: /home/marcelf/filez/app/views/main/_file_row.php:36
 msgid "Download %x% times"
 msgstr "Téléchargé %x% fois"
 
-#: /home/didrya/filez/app/views/auth/loginForm.php:5
-#: /home/didrya/filez/app/views/user/create.php:5
-#: /home/didrya/filez/app/views/user/create.php:6
-#: /home/didrya/filez/app/views/user/index.php:10
-#: /home/didrya/filez/app/views/user/edit.php:5
-#: /home/didrya/filez/app/views/user/edit.php:6
+#: /home/marcelf/filez/app/views/auth/loginForm.php:5
+#: /home/marcelf/filez/app/views/user/create.php:5
+#: /home/marcelf/filez/app/views/user/create.php:6
+#: /home/marcelf/filez/app/views/user/index.php:10
+#: /home/marcelf/filez/app/views/user/edit.php:5
+#: /home/marcelf/filez/app/views/user/edit.php:6
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
-#: /home/didrya/filez/app/views/auth/loginForm.php:9
-#: /home/didrya/filez/app/views/user/create.php:7
-#: /home/didrya/filez/app/views/user/edit.php:7
+#: /home/marcelf/filez/app/views/auth/loginForm.php:9
+#: /home/marcelf/filez/app/views/user/create.php:7
+#: /home/marcelf/filez/app/views/user/edit.php:7
 msgid "Password"
 msgstr "Mot de passe"
 
-#: /home/didrya/filez/app/views/auth/loginForm.php:13
+#: /home/marcelf/filez/app/views/auth/loginForm.php:13
 msgid "Log me in"
 msgstr "Me connecter"
 
-#: /home/didrya/filez/app/views/user/create.php:1
-#: /home/didrya/filez/app/views/user/index.php:5
+#: /home/marcelf/filez/app/views/user/create.php:1
+#: /home/marcelf/filez/app/views/user/index.php:5
 msgid "Create a new user"
 msgstr "Créer un nouvel utilisateur"
 
-#: /home/didrya/filez/app/views/user/create.php:11
-#: /home/didrya/filez/app/views/user/create.php:12
-#: /home/didrya/filez/app/views/user/show.php:7
-#: /home/didrya/filez/app/views/user/edit.php:11
+#: /home/marcelf/filez/app/views/user/create.php:11
+#: /home/marcelf/filez/app/views/user/create.php:12
+#: /home/marcelf/filez/app/views/user/show.php:7
+#: /home/marcelf/filez/app/views/user/edit.php:11
 msgid "Email"
 msgstr "Envoyer par email"
 
-#: /home/didrya/filez/app/views/user/create.php:18
-#: /home/didrya/filez/app/views/user/edit.php:18
+#: /home/marcelf/filez/app/views/user/create.php:18
+#: /home/marcelf/filez/app/views/user/edit.php:18
 msgid "This user can administrate FileZ"
 msgstr "Cet utilisateur peut administrer FileZ"
 
-#: /home/didrya/filez/app/views/user/create.php:19
-#: /home/didrya/filez/app/views/user/edit.php:19
+#: /home/marcelf/filez/app/views/user/create.php:19
+#: /home/marcelf/filez/app/views/user/edit.php:19
 msgid "Admin"
 msgstr "Administrateur"
 
-#: /home/didrya/filez/app/views/user/create.php:24
-#: /home/didrya/filez/app/views/user/create.php:25
-#: /home/didrya/filez/app/views/user/edit.php:24
-#: /home/didrya/filez/app/views/user/edit.php:25
+#: /home/marcelf/filez/app/views/user/create.php:24
+#: /home/marcelf/filez/app/views/user/create.php:25
+#: /home/marcelf/filez/app/views/user/edit.php:24
+#: /home/marcelf/filez/app/views/user/edit.php:25
 msgid "Firstname"
 msgstr "Prénom"
 
-#: /home/didrya/filez/app/views/user/create.php:28
-#: /home/didrya/filez/app/views/user/create.php:29
-#: /home/didrya/filez/app/views/user/edit.php:28
-#: /home/didrya/filez/app/views/user/edit.php:29
+#: /home/marcelf/filez/app/views/user/create.php:28
+#: /home/marcelf/filez/app/views/user/create.php:29
+#: /home/marcelf/filez/app/views/user/edit.php:28
+#: /home/marcelf/filez/app/views/user/edit.php:29
 msgid "Lastname"
 msgstr "Nom"
 
-#: /home/didrya/filez/app/views/user/create.php:32
+#: /home/marcelf/filez/app/views/user/create.php:32
 msgid "Create"
 msgstr "Créer"
 
-#: /home/didrya/filez/app/views/user/index.php:1
+#: /home/marcelf/filez/app/views/user/index.php:1
 msgid "Manage users"
 msgstr "Gérer les utilisateurs"
 
-#: /home/didrya/filez/app/views/user/index.php:11
+#: /home/marcelf/filez/app/views/user/index.php:12
+msgid "File count"
+msgstr "Nb de fichiers"
+
+#: /home/marcelf/filez/app/views/user/index.php:11
 msgid "Role"
 msgstr "Rôle"
 
-#: /home/didrya/filez/app/views/user/index.php:12
+#: /home/marcelf/filez/app/views/user/index.php:12
 msgid "File count"
 msgstr "Nom de fichiers"
 
-#: /home/didrya/filez/app/views/user/index.php:13
+#: /home/marcelf/filez/app/views/user/index.php:13
 msgid "Disk usage"
 msgstr "Espace disque"
 
-#: /home/didrya/filez/app/views/user/index.php:14
+#: /home/marcelf/filez/app/views/user/index.php:14
 msgid "Expired files"
 msgstr "Fichiers expirés"
 
-#: /home/didrya/filez/app/views/user/index.php:22
+#: /home/marcelf/filez/app/views/user/index.php:22
 msgid "admin"
 msgstr "admin"
 
-#: /home/didrya/filez/app/views/user/index.php:35
-#: /home/didrya/filez/app/views/user/show.php:3
+#: /home/marcelf/filez/app/views/user/index.php:35
+#: /home/marcelf/filez/app/views/user/show.php:3
 msgid "Edit"
 msgstr "Modifier"
 
-#: /home/didrya/filez/app/views/user/index.php:38
+#: /home/marcelf/filez/app/views/user/index.php:38
 msgid "Are you sure you want to delete the user \"%displayname%\" (%username%)"
 msgstr "Êtes vous sûr de vouloir supprimer l'utilisateur  \"%displayname%\" (%username%)"
 
-#: /home/didrya/filez/app/views/user/show.php:8
+#: /home/marcelf/filez/app/views/user/show.php:8
 msgid "Account created"
 msgstr "Compte créé"
 
-#: /home/didrya/filez/app/views/user/show.php:9
+#: /home/marcelf/filez/app/views/user/show.php:9
 msgid "Administrator ?"
 msgstr "Administrateur"
 
-#: /home/didrya/filez/app/views/user/show.php:9
+#: /home/marcelf/filez/app/views/user/show.php:9
 msgid "yes"
 msgstr "oui"
 
-#: /home/didrya/filez/app/views/user/show.php:9
+#: /home/marcelf/filez/app/views/user/show.php:9
 msgid "no"
 msgstr "non"
 
-#: /home/didrya/filez/app/views/user/edit.php:1
+#: /home/marcelf/filez/app/views/user/edit.php:1
 msgid "Edit user"
 msgstr "Modifier l'utilisateur "
 
-#: /home/didrya/filez/app/views/user/edit.php:12
+#: /home/marcelf/filez/app/views/user/edit.php:12
 msgid "email"
 msgstr "email"
 
-#: /home/didrya/filez/app/views/user/edit.php:32
+#: /home/marcelf/filez/app/views/user/edit.php:32
 msgid "Update"
 msgstr "Modifier"
 
-#: /home/didrya/filez/app/views/layout/_footer.php:11
+#: /home/marcelf/filez/app/views/layout/_footer.php:11
 msgid "Using %space% of %quota%"
 msgstr "%space% utilisés sur %quota%"
 
-#: /home/didrya/filez/app/views/layout/_footer.php:19
+#: /home/marcelf/filez/app/views/layout/_footer.php:19
 msgid "Find help"
 msgstr "Aide"
 
-#: /home/didrya/filez/app/views/layout/_footer.php:22
+#: /home/marcelf/filez/app/views/layout/_footer.php:22
 msgid "Report a bug"
 msgstr "Signaler un bogue"
 
-#: /home/didrya/filez/app/views/layout/_footer.php:27
+#: /home/marcelf/filez/app/views/layout/_footer.php:27
 msgid "A free software from the University of Avignon"
 msgstr "Un logiciel libre de l'Université d'Avignon et des Pays de Vaucluse"
 
-#: /home/didrya/filez/app/views/layout/_header.php:13
+#: /home/marcelf/filez/app/views/layout/_header.php:13
 msgid "Share files for a limited time"
 msgstr "Distribuez vos fichiers pour une durée limitée"
 
-#: /home/didrya/filez/app/views/layout/_header.php:27
+#: /home/marcelf/filez/app/views/layout/_header.php:27
 msgid "Administration"
 msgstr "Administration"
 
-#: /home/didrya/filez/app/views/layout/_header.php:30
+#: /home/marcelf/filez/app/views/layout/_header.php:30
 msgid "Log out"
 msgstr "Me déconnecter"
 
-#: /home/didrya/filez/lib/fz_limonade.php:83
+#: /home/marcelf/filez/lib/fz_limonade.php:83
 msgid "Page not found"
 msgstr "Page non trouvée"
 
-#: /home/didrya/filez/lib/Fz/Controller.php:47
+#: /home/marcelf/filez/lib/Fz/Controller.php:47
 msgid "This page is secured"
 msgstr "Cette page est sécurisée"
 

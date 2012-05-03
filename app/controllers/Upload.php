@@ -271,7 +271,7 @@ class App_Controller_Upload extends Fz_Controller {
                 break;
             case UPLOAD_ERR_QUOTA_EXCEEDED:
                 $response ['statusText'] .= __r('You exceeded your disk space quota (%space%).',
-                    array ('space' => fz_config_get ('app', 'user_quota')));
+                    array ('space' => $this->getUser()->getQuota().'G'));
         }
         return $this->returnData ($response);
     }

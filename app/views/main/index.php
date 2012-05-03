@@ -128,6 +128,39 @@
         $('section.new-file').dialog ('open');
         e.preventDefault();
       });
+
+        $("a.share", this).live("click", function(e){
+            e.preventDefault();
+            var modal = $('#share-modal');
+            var fileUrl = $(this).attr ('href')
+                .substring (-1, $(this).attr ('href').lastIndexOf ('/'));
+
+            var filename = $('.filename a', $(this).closest('.file-description')).html();
+
+            $('#share-modal #share-link a').attr ('href', fileUrl).html (fileUrl);
+            $('#share-modal #share-destinations li a').each (function () {
+                $(this).attr ('href', this.getAttribute ('data-url')
+                    .replace ('%url%', fileUrl)
+                    .replace ('%filename%', $.trim(filename)));
+            });
+
+            $('#share-modal #share-destinations li.email a').click (function (e) {
+                e.preventDefault ();
+                $('#share-modal').dialog ('close');
+
+                $('form', $('#email-modal')).attr ('action', $(this).attr ('href'));
+                $('.open-email-client')
+                    .attr ('href', 'mailto:?body='+settings.messages.emailMessage+' : '+fileUrl)
+                    .click (function (e) { $('.ui-dialog-content').dialog('close'); });
+
+                $('#email-modal').dialog ('open');
+            });
+
+            $('#share-modal').dialog ('option', 'title', filename);
+            $('#email-modal').dialog ('option', 'title', filename);
+
+            modal.dialog ('open');
+        });
       
       // Show password box on checkbox click
       $('input.password').hide();

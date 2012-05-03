@@ -44,7 +44,7 @@
  * 
  */
 
-define ('FZ_VERSION', '2.1.0-2');
+define ('FZ_VERSION', '2.1.0-3');
 
 /**
  * Loading Zend for i18n classes and autoloader
@@ -193,6 +193,7 @@ fz_dispatch_get  ('/admin/users/:id'            ,'User'        ,'show');
 fz_dispatch_get  ('/admin/users/:id/delete'     ,'User'        ,'delete');
 fz_dispatch_get  ('/admin/users/:id/edit'       ,'User'        ,'edit');
 fz_dispatch_post ('/admin/users/:id/edit'       ,'User'        ,'update');
+fz_dispatch_post ('/admin/users/editQuota'      ,'User'        ,'editQuota');
 
 // Backend::Files
 fz_dispatch_get  ('/admin/files'                ,'Admin'       ,'files');
