@@ -44,7 +44,7 @@
  * 
  */
 
-define ('FZ_VERSION', '2.1.0-3');
+define ('FZ_VERSION', '2.1.0-4');
 
 /**
  * Loading Zend for i18n classes and autoloader
