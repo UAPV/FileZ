@@ -140,6 +140,7 @@ class App_Controller_User extends Fz_Controller {
         $error = false;
         $success = false;
 
+        error_log('dans la fonction editQuota');
       if($this->shorthandSizeToBytes($_POST['quota'].'G') > $this->shorthandSizeToBytes($user->getDiskUsage()))
       {
          if(count($user) > 0)
