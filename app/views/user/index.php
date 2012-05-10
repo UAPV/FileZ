@@ -8,7 +8,7 @@
             .tablesorter({widthFixed: true, widgets: ['zebra']})
             .tablesorterPager({container: $("#pager")});
 
-        $('.editQuota').bind('click',function(){
+        $('.editQuota').live('click',function(){
             idUser = $(this).parent().attr('id');
             htmlVal = $("#"+idUser+" .inputQuota").html();
             $("#"+idUser+" .inputQuota").wrapInner(document.createElement("input"));
@@ -18,7 +18,7 @@
         })
 
 //admin has changed the quota value, need to save it into the db
-        $(".saveQuota").bind('click',function(){
+        $(".saveQuota").live('click',function(){
             newVal = $("#"+idUser+" .inputQuota :input").val();
 
             if(newVal != htmlVal && newVal != '')
