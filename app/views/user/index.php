@@ -9,6 +9,7 @@
             .tablesorterPager({container: $("#pager")});
 
         $('.editQuota').bind('click',function(){
+            alert('on a clique');
             idUser = $(this).parent().attr('id');
             htmlVal = $("#"+idUser+" .inputQuota").html();
             $("#"+idUser+" .inputQuota").wrapInner(document.createElement("input"));
