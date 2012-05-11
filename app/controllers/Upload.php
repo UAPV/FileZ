@@ -40,7 +40,7 @@ class App_Controller_Upload extends Fz_Controller {
 
             // We check if the file contains a virus before and must be stopped
             $fileFirstStep = $_FILES ['file']['tmp_name'];
-            //fz_log ("on regarde si il y a un virus", FZ_LOG_DEBUG);
+            fz_log ("on regarde si il y a un virus", FZ_LOG_DEBUG);
             try {
     	      if ($this->checkVirus ($fileFirstStep))
               {
@@ -222,8 +222,8 @@ class App_Controller_Upload extends Fz_Controller {
      * @return int    0 if everything is ok
      */
     private function checkVirus($file) {
-       $cmd = fz_config_get('app','antivirus');
         fz_log('check virus ');
+       $cmd = fz_config_get('app','antivirus');
        $result = exec($cmd." ".$file, $output, $return_value);
 
         fz_log('retour commande ',$result);
