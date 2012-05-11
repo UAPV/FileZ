@@ -223,8 +223,10 @@ class App_Controller_Upload extends Fz_Controller {
      */
     private function checkVirus($file) {
        $cmd = fz_config_get('app','antivirus');
-       exec($cmd." ".$file, $output, $return_value);
+        fz_log('check virus ');
+       $result = exec($cmd." ".$file, $output, $return_value);
 
+        fz_log('retour commande ',$result);
         if ($return_value === 1) {
         	fz_log ('VIRUS FOUND file id '.$file.', antivirus message: "'.implode ($output).'"', FZ_LOG_ERROR);
         	return 1;
