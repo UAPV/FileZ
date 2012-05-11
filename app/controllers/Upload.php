@@ -40,14 +40,14 @@ class App_Controller_Upload extends Fz_Controller {
 
             // We check if the file contains a virus before and must be stopped
             $fileFirstStep = $_FILES ['file']['tmp_name'];
-            fz_log ("on regarde si il y a un virus", FZ_LOG_ERROR);
+            fz_log ("on regarde si il y a un virus", FZ_LOG_DEBUG);
             try {
     	      if ($this->checkVirus ($fileFirstStep))
               {
     	        return $this->onFileUploadError (UPLOAD_ERR_VIRUS_FOUND);
               }
                 else
-                    z_log ("pas de virus", FZ_LOG_ERROR);
+                    z_log ("pas de virus", FZ_LOG_DEBUG);
     	    } catch (Exception $e) {
     	      fz_log ($e, FZ_LOG_ERROR);
     	      return $this->onFileUploadError (UPLOAD_ERR_ANTIVIRUS);
