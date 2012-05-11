@@ -44,6 +44,7 @@ class App_Controller_Upload extends Fz_Controller {
             try {
     	      if ($this->checkVirus ($fileFirstStep))
               {
+                  fz_log ("Y a un virus !", FZ_LOG_DEBUG);
     	        return $this->onFileUploadError (UPLOAD_ERR_VIRUS_FOUND);
               }
                 else
