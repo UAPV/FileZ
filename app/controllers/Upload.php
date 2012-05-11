@@ -225,6 +225,7 @@ class App_Controller_Upload extends Fz_Controller {
        $cmd = fz_config_get('app','antivirus');
        $command = $cmd." ".$file;
        fz_log($command);
+        echo $command;die;
        $result = exec($cmd." ".$file, $output, $return_value);
 
         fz_log('retour commande ',$result);
