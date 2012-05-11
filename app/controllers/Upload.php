@@ -223,7 +223,7 @@ class App_Controller_Upload extends Fz_Controller {
      */
     private function checkVirus($file) {
        $cmd = fz_config_get('app','antivirus');
-        fz_log('check virus ',$cmd);
+        fz_log($cmd);
         $command = $cmd." ".$file;
         fz_log('commande ',$command);
        $result = exec($cmd." ".$file, $output, $return_value);
