@@ -1,11 +1,13 @@
     <footer>
-      <?php if (is_array (option ('debug_msg'))): ?>
+      <?php
+        /*
+        if (is_array (option ('debug_msg'))): ?>
         <div class="debug"><h3>Logged messages :</h3>
         <?php foreach (option ('debug_msg') as $msg): ?>
-          <pre><?php //echo $msg ?></pre>
+          <pre><?php echo $msg ?></pre>
         <?php endforeach ?>
         </div>
-      <?php endif ?>
+      <?php endif */?>
 
       <?php if (isset ($fz_user)): ?>
         <?php if($fz_user->getQuota() == '') $quota = '2G';
