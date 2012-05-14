@@ -186,7 +186,7 @@ class App_Model_DbTable_File extends Fz_Db_Table_Abstract {
      */
     public function getRemainingSpaceForUser ($user) {
 
-        return ($this->shorthandSizeToBytes ($user->getQuota() )
+           return ($this->shorthandSizeToBytes ($user->getQuota() )
               - $this->getTotalDiskSpaceByUser ($user));
     }
     
