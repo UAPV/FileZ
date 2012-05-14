@@ -8,9 +8,11 @@
       <?php endif ?>
 
       <?php if (isset ($fz_user)): ?>
+        <?php if($fz_user->getQuota() == '') $quota = '2G';
+        else $quota = $fz_user->getQuota(); ?>
         <p id="disk-usage"><?php echo __r('Using %space% of %quota%', array(
                    'space' => '<b id="disk-usage-value">'.$fz_user->getDiskUsage ().'</b>',
-                   'quota' => $fz_user->getQuota() )); ?>.
+                   'quota' => $quota )); ?>.
         </p>
       <?php endif ?>
 

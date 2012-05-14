@@ -27,6 +27,7 @@ class App_Model_DbTable_File extends Fz_Db_Table_Abstract {
         'extends_count',
         'comment',
         'password',
+        'quota'
     );
 
     /**
@@ -184,7 +185,8 @@ class App_Model_DbTable_File extends Fz_Db_Table_Abstract {
      * @return float            Size in bytes or string if $shorthand = true
      */
     public function getRemainingSpaceForUser ($user) {
-        return ($this->shorthandSizeToBytes ($user->getQuota())
+
+        return ($this->shorthandSizeToBytes ($user->getQuota() )
               - $this->getTotalDiskSpaceByUser ($user));
     }
     

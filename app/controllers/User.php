@@ -53,6 +53,7 @@ class App_Controller_User extends Fz_Controller {
         $this->secure ('admin');
         $user = new App_Model_User ();
         $user->setUsername  ($_POST ['username']);
+        $user->setQuota     ('2G');
         $user->setPassword  ($_POST ['password']);
         $user->setFirstname ($_POST ['firstname']);
         $user->setLastname  ($_POST ['lastname']);

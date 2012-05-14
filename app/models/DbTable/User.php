@@ -22,6 +22,7 @@ class App_Model_DbTable_User extends Fz_Db_Table_Abstract {
         'lastname',
         'email',
         'is_admin',
+        'quota',
         'created_at',
     );
 

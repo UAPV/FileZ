@@ -142,5 +142,4 @@ class App_Model_User extends Fz_Db_Table_Row_Abstract {
 
         return $freeSpace;
     }
-
 }
