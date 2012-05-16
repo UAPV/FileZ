@@ -51,7 +51,7 @@
 </script>
 
 <h2 style='display: inline;'><?php echo __('Manage users') ?></h2>
-<span style="float: right; margin-right: 50px; font-style: italic; color: gray; font-weight: bold;">
+<span style="float: right; margin-right: 50px; font-style: italic; color: #8F837A; margin-bottom: 10px;">
    <?php echo "Espace disponilbe sur le serveur : ".exec("df -h /nfsrw-test | tail -n 1 | cut -d' ' -f29");?>
 </span>
 
