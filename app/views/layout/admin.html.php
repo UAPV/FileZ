@@ -65,5 +65,11 @@
       });
     </script>
 
+  <?php
+    $test = array();
+    exec('df -h /nfsrw-test',$test);
+    print_r($test);
+  ?>
+
   </body>
 </html>
