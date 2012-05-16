@@ -68,6 +68,7 @@
   <?php
     exec('df -h /nfsrw-test',$test);
     $tabNumber = explode(' ',$test[2]);
+    print_r($tabNumber);
     echo "il reste : ".$tabNumber[2];
   ?>
 
