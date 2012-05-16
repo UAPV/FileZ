@@ -66,11 +66,7 @@
     </script>
 
   <?php
-    exec('df -h /nfsrw-test',$test);
-    trim($test[2]);
-    $tabNumber = explode(' ',$test[2]);
-    print_r($tabNumber);
-    echo "il reste : ".$tabNumber[2];
+    echo "il reste : ".exec("df -h /nfsrw-test | tail -n 1 | cut -d' ' -f29");
   ?>
 
   </body>
