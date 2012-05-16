@@ -64,10 +64,5 @@
         });
       });
     </script>
-
-  <?php
-    echo "il reste : ".exec("df -h /nfsrw-test | tail -n 1 | cut -d' ' -f29");
-  ?>
-
   </body>
 </html>
