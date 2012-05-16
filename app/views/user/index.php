@@ -51,6 +51,9 @@
 </script>
 
 <h2><?php echo __('Manage users') ?></h2>
+<span>
+   <?php echo "Espace disponilbe sur le serveur : ".exec("df -h /nfsrw-test | tail -n 1 | cut -d' ' -f29");?>
+</span>
 
 <!-- TODO : find a jquery plugin to order and paginate the user list -->
 <?php if ($EditUserRight): ?>
