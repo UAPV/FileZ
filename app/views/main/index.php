@@ -63,6 +63,7 @@
   </ul>
 </section>
 
+    <?php $sharing_destinations = array('email')?>
 <div id="share-modal" class="fz-modal" style="display: none;">
     <p class="instruction"><?php echo __('Give this link to the person you want to share this file with') ?></p>
     <p id="share-link"><a href=""></a></p>
