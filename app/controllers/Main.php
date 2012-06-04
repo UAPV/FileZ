@@ -26,6 +26,7 @@ class App_Controller_Main extends Fz_Controller {
              Fz_Db::getTable('File')->shorthandSizeToBytes (ini_get ('post_max_size')),
                 $freeSpaceLeft);
 
+        $sharing_destinations = array('facebook');
         $progressMonitor = fz_config_get ('app', 'progress_monitor');
         $progressMonitor = new $progressMonitor ();
         
