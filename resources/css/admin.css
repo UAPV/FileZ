@@ -1,12 +1,33 @@
+@charset "UTF-8";
 
-#content, header, footer, article, nav {
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	max-width: none !important;
+}
+
+html, body {
+	height: 100%;
+	text-align: justify;
+}
+
+header, #content, footer {
 	margin: 0 auto;
-	width: 1000px
+	min-width: 1000px;
+	width: 70%;
+}
+
+article, nav {
+	width: 100%;
+}
+
+#pager {
+	top: 0;
+	position: static !important;
 }
 
 nav {
-  width: 100%;
-	margin: 0;
 	color: #AAA;
 }
 nav ul li {
@@ -40,7 +61,6 @@ nav ul li a.selected {
 
 article {
 	padding: 10px 20px;
-	width: 960px; /* 1000 - ( 2 * 20 ) */
 	background: white;
 }
 
@@ -55,7 +75,6 @@ table.data {
 }
 table.data th, table.data td {
 	padding: 4px 6px;
-    font-size: 1em;
 }
 table.data th {
 	background: #DDD;
@@ -67,37 +86,5 @@ table.data th {
 table.data td {
 	background: white;
 	border: 1px solid #DDD;
-    text-align: center;
-}
-
-.link {
-    cursor: pointer;
-    text-decoration: underline;
-    color: #1E52A1;
-    float: right;
-    margin-right: 5px;
-}
-
-.pager {
-    margin-top: 30px;
-
-}
-
-.pager input {
-    width: 50px;
-    text-align: center;
-}
-
-table.tablesorter thead tr th, table.tablesorter tfoot tr th{
-    font-size: 10pt !important;
-}
-
-table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
-    background-color: #BAD1DD !important;
-    font-size: 10pt !important;
-}
-
-.pagesize {
-    background-color: #EAE6E0;
-    color: gray;
+	font-size: 0.8em;
 }
