@@ -172,7 +172,7 @@ is several possible values that should suit your needs :
 - "SHA1"
 - PHP Function name ex: "methodName"
 - PHP Static method ex: "ClassName::Method"
-- Plain SQL ex: "SHA1(CONCAT(salt, :password))"
+- Plain SQL ex: "SHA1(CONCAT(salt, :password))" (does not work with sqlite)
 
 If you use a PHP callback, just put the file containing your function under the
 'lib/' directory.
